@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Advanced HTML/Javascript Game with EaselJS - www.codeyourweb.org | GARNIER Jean-Pierre</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!-- Import libs and main JS code -->
+		<script language="javascript" src="jquery.min.js"></script>
+		<script language="javascript" src="easeljs-0.6.0.min.js"></script>
+		<script language="javascript" src="gfxWindow.js"></script>
+		<!-- Import classes -->
+		<script language="javascript" src="classes/Player.js"></script>
+		<script language="javascript" src="classes/Monster.js"></script>
+		<script language="javascript" src="classes/Bullet.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	<img src="images/game_cover.png" />
+<div id="content">
+	<audio autoplay="true">
+		<source src="music/mainTheme.ogg" type="audio/ogg">
+		<source src="music/mainTheme.mp3" type="audio/mpeg">
+	</audio>
+	<canvas id="gfxWindow" height="500" width="800">Your browser doesn't support HTML 5 Canvas.</canvas>
+	<table id="params">
+		<tr>
+			<td width="33%">
+				Vies:
+				<ul id="lifes">
+					<li><img src="images/player.png" /></li>
+					<li><img src="images/player.png" /></li>
+					<li><img src="images/player.png" /></li>
+				</ul>
+			</td>
+			
+			<td width="33%">
+				<input id="start" type="button" value="START GAME" style="margin-left: 50px;" />
+			</td>
+			
+			<td width="33%">
+				<span id="level" class="level">Level 1</span><br />
+				<span id="score" class="score">Score: 0</span>
+			</td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>
